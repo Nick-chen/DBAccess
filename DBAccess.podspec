@@ -47,13 +47,12 @@ Property level encryption so databases remain human readable whilst securing ind
   s.platform     = :ios, '6.0'
   s.requires_arc = true
 
+  s.source_files  = "DBAccess.framework/**/*.{h,m,c}"
   s.preserve_paths = 'DBAccess.framework'
-  s.public_header_files = 'DBAccess.framework/Versions/1/Headers/DBAccess.h'
+  s.public_header_files = 'DBAccess.framework/**/*.h'
   s.vendored_frameworks = 'DBAccess.framework'
   s.frameworks = 'Foundation','DBAccess'
   s.xcconfig   = { 'FRAMEWORK_SEARCH_PATHS' => '$(SRCROOT)/DBAccess/' }
-  
-  s.documentation_url = 'http://docs.db-access.org/interface_d_b_access.html'
   s.deprecated = true
   s.deprecated_in_favor_of = 'SharkORM'
     
