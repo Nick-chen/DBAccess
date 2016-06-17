@@ -48,7 +48,7 @@ Property level encryption so databases remain human readable whilst securing ind
   s.requires_arc = true
 
   s.preserve_paths = 'DBAccess.framework'
-  s.public_header_files = 'DBAccess.framework/**/*.h'
+  s.public_header_files = 'DBAccess.framework/Versions/1/Headers/DBAccess.h'
   s.vendored_frameworks = 'DBAccess.framework'
   s.frameworks = 'Foundation','DBAccess'
   s.xcconfig   = { 'FRAMEWORK_SEARCH_PATHS' => '$(SRCROOT)/DBAccess/' }
