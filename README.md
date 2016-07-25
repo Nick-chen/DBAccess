@@ -1,3 +1,6 @@
+*DBAccess has been depricated in favour of SharkORM, it is open source and API compatible designed to be a drop in replacement*
+*, It can be found at https://github.com/sharksync/sharkorm and http://sharkorm.com*
+
 DBAccess iOS ORM
 ============
 
